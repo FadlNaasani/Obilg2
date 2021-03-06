@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class = container>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Bestilling av kinobiletter </h3>
+            <form class="form">
+                <div>
+                    <label>Velg en film:</label>
+                    <select id="filmliste" class="form-control">
+                    <option value=""></option>
+                    <option value="Lucy">Lucy</option>
+                    <option value="Swat">Swat</option>
+                    <option value="the flas">the flash</option>
+                    </select>
+                    <label  id="feilOption"></label>
+                </div> <br><br>
+                <div class="form-group">
+                    <label> Antall:</label>
+                    <input type="number" class="form-control" id="antall">
+                    <label id="feilAntall"></label>
+                </div>
+                <div class="form-group">
+                    <label> ForNavn:</label>
+                    <input type="text" class="form-control" id="forNavn">
+                    <label  id="feilfor"></label>
+                </div>
+                <div class="form-group">
+                    <label> Etter navn:</label>
+                    <input type="text" class="form-control" id="etterNavn">
+                    <label id="feilEtter"></label>
+                </div>
+                <div class="form-group">
+                    <label> Telefon nummmer:</label>
+                    <input type="text" class="form-control" id="telefon">
+                    <label class="form-group" id="feilTelf"></label>
+                </div>
+                <div class="form-group">
+                    <label> Epost:</label>
+                    <input type="text" class="form-control" id="epost">
+                    <label id="feilEpost"></label>
+                </div>
+            </form>
+            <button onclick="kjop()" class="btn btn-primary" >Kjøp bilet</button>
+        </div>
+        <div class="col-md-8">
+            <h2>Alle billetter</h2>
+            <div id="visBilett"></div>
+            <button onclick="deletes()" class="btn btn-danger">Slett alle billetter</button>
+
+        </div>
+</div>
+
+<!--<h1>Bestilling av kinobiletter </h1>
+
+<label>Velg en film:</label>
+
+<select id="filmliste">
+    <option value="The big">The big</option>
+    <option value="Lucy">Lucy</option>
+    <option value="Swat">Swat</option>
+    <option value="the flas">the flash</option>
+</select> <br><br><br>
+
+<table>
+
+    <tr>
+        <th> <label> Antall:</label> </th>
+        <td> <input type="number" id="antall"></td>
+        <td><span id="feilAntall"></span><br/></td>
+    </tr>
+    <tr>
+        <th> <label> Fornavn:</label> </th>
+        <td> <input type="text" id="forNavn"></td>
+        <td><span id="feilfor"></span><br/></td>
+    </tr>
+    <tr>
+        <th><label>Etternavn: </label></th>
+        <td> <input type="text"  id="etterNavn"></td>
+        <td><span id="feilEtter"></span><br/></td>
+    </tr>
+    <tr>
+        <th><label>TelefonNr:</label></th>
+        <td> <input type="text" id="telefon"></td>
+        <td><span id="feilTelf"></span><br/></td>
+    </tr>
+    <tr>
+        <th><label>Epost:</label></th>
+        <td> <input type="text" id="epost"></td>
+        <td><span id="feilEpost"></span><br/></td>
+    </tr>
+</table>
+
+<br>
+<button onclick="kjop()">Kjøp bilett</button> <br><br>
+<h1>Alle billetter</h1>
+<span id="visBilett"></span><br>
+<button onclick="deletes()">Slett alle billetter</button>
+<span id="slettbilett"></span><br/>
+-->
+</body>
+</html>
